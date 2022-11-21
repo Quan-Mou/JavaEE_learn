@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/spring-begin/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-dependency-inject/pom.xml" />
+        <option value="$PROJECT_DIR$/factory-method/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-create-bean-way/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-bean-life/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-review-reflect/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-myspring/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_16" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

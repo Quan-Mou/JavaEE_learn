@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    注入简单数据类型-->
+
+    <bean id="StudentBean" class="pers.quan.spring.bean.Student">
+        <property name="age">
+            <value>18</value>
+        </property>
+        <property name="name"  value="拂尘"/>
+        <property name="isGender" value="true"/>
+    </bean>
+
+
+<!--    配置级联属性-->
+    <bean id="ClazzBean" class="pers.quan.spring.bean.Clazz"/>
+
+    <bean id="CascadeBena" class="pers.quan.spring.bean.Cascade">
+        <property name="name" value="权某人"/>
+<!--        如果需要类属性，顺序不能乱，先注入类，在注入类属性,并且必须提供类的get方法-->
+        <property name="clazz" ref="ClazzBean"/>
+        <property name="clazz.classname" value="高三2班"/>
+    </bean>
+
+
+
+
+</beans>

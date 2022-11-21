@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="factory-method" />
+        <module name="spring-create-bean-way" />
+        <module name="spring-review-reflect" />
+        <module name="spring-dependency-inject" />
+        <module name="spring-bean-life" />
+        <module name="spring-begin" />
+        <module name="spring-myspring" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="factory-method" target="1.5" />
+      <module name="spring-bean-life" target="17" />
+      <module name="spring-begin" target="17" />
+      <module name="spring-create-bean-way" target="17" />
+      <module name="spring-dependency-inject" target="17" />
+      <module name="spring-myspring" target="17" />
+      <module name="spring-review-reflect" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

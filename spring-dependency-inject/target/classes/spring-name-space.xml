@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:c="http://www.springframework.org/schema/c"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd
+                           http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+        
+
+<!--    P命名空间是基于Set注入的 -->
+        <bean id="nameSpaceBean" class="pers.quan.spring.bean.NameSpace" p:name="王权富贵" p:age="18"/>
+
+<!--    C命名空间注入是基于构造器注入的-->
+        <bean id="nameSpacePBena" class="pers.quan.spring.bean.NameSpaceC" c:age="29" c:name="王师傅"/>
+
+<!--        <bean id="nameSpacePBena" class="pers.quan.spring.bean.NameSpaceC" c:_1="3" c:_0="郭师傅"/>-->
+
+<!--        util命名空间-->
+        <util:properties id="prop">
+                <prop key="driver">com.mysql.cj.jdbc.Driver</prop>
+                <prop key="url">jdbc:mysql://localhost:3306/spring</prop>
+                <prop key="username">root</prop>
+                <prop key="password">123456</prop>
+        </util:properties>
+        <bean id="md1" class="pers.quan.spring.bean.MyDateSource1">
+                <property name="properties" ref="prop"/>
+        </bean>
+
+        <bean id="md2" class="pers.quan.spring.bean.MyDateSource2" >
+                <property name="properties" ref="prop"/>
+        </bean>
+
+<!--        引入外部属性文件-->
+        <context:property-placeholder location="jdbc.properties"/>
+        <bean id="propertyFile" class="pers.quan.spring.bean.ProPertyFile" >
+               <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+        </bean>
+
+</beans>

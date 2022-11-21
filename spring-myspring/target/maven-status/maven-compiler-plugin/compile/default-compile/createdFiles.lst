@@ -1,0 +1,5 @@
+pers\quan\spring\bean\VipService.class
+org\myspring\ApplicationContext.class
+pers\quan\spring\bean\VipDao.class
+org\myspring\ClassPathXmlApplicationContext.class
+pers\quan\spring\bean\User.class

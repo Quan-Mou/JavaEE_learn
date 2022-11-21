@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    <bean id="husbandBean" class="pers.quan.spring.bean2.Husband">-->
+<!--        <property name="name" value="卫庄"/>-->
+<!--        <property name="wife" ref="wifeBean"/>-->
+<!--    </bean>-->
+<!--    <bean id="wifeBean" class="pers.quan.spring.bean2.Wife" >-->
+<!--        <property name="name" value="盖聂"/>-->
+<!--        <property name="husband" ref="husbandBean"/>-->
+<!--    </bean>-->
+
+    <bean id="husbandBean" class="pers.quan.spring.bean2.Husband" scope="prototype">
+        <property name="name" value="卫庄"/>
+        <property name="wife" ref="wifeBean"/>
+    </bean>
+    <bean id="wifeBean" class="pers.quan.spring.bean2.Wife" scope="prototype">
+        <property name="name" value="盖聂"/>
+        <property name="husband" ref="husbandBean"/>
+    </bean>
+</beans>

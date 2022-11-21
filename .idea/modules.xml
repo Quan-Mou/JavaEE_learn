@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/factory-method/factory-method.iml" filepath="$PROJECT_DIR$/factory-method/factory-method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-bean-life/spring-bean-life.iml" filepath="$PROJECT_DIR$/spring-bean-life/spring-bean-life.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-begin/spring-begin.iml" filepath="$PROJECT_DIR$/spring-begin/spring-begin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-create-bean-way/spring-create-bean-way.iml" filepath="$PROJECT_DIR$/spring-create-bean-way/spring-create-bean-way.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-dependency-inject/spring-dependency-inject.iml" filepath="$PROJECT_DIR$/spring-dependency-inject/spring-dependency-inject.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-myspring/spring-myspring.iml" filepath="$PROJECT_DIR$/spring-myspring/spring-myspring.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-review-reflect/spring-review-reflect.iml" filepath="$PROJECT_DIR$/spring-review-reflect/spring-review-reflect.iml" />
+    </modules>
+  </component>
+</project>

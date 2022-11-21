@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+   <bean id="VipBean" class="pers.quan.spring.dao.VipDao" />
+   <bean id="UserBean" class="pers.quan.spring.dao.UserDao"/>
+    <bean id="VipServiceBean" class="pers.quan.spring.service.VipService">
+<!--        constructor-arg 构造注入-->
+<!--        方式一：-->
+<!--        index = 0 是构造器第一个参数，其他参数，以此类推-->
+<!--        <constructor-arg index="0" ref="VipBean"/>-->
+<!--        <constructor-arg index="1" ref="UserBean"/>-->
+<!--        方式二：-->
+        <constructor-arg name="userDao" ref="UserBean"/>
+        <constructor-arg name="vip" ref="VipBean"/>
+
+
+
+    </bean>
+
+
+</beans>

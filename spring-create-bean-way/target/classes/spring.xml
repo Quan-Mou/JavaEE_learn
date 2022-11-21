@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<!--    简单工厂模式-->
+    <bean id="myInfoBean" class="pers.quan.spring.bean.MyInfoFactory" factory-method="get"/>
+
+<!--    factory-benan 模式（工厂方法模式）-->
+    <bean id="myInfo2Factory" class="pers.quan.spring.bean.Myinfo2Factory"/>
+    <bean id="myInfo2" factory-bean="myInfo2Factory" factory-method="get"/>
+
+<!--    实现FactoryBean-->
+    <bean id="myInfo3Bean" class="pers.quan.spring.bean.MyInfo3FactoryBean"/>
+
+<!--    FactoryBean应用-->
+    <bean id="Data" class="pers.quan.spring.bean.DataFactoryBean">
+        <property name="date" value="2004-5-29"/>
+    </bean>
+    <bean id="student" class="pers.quan.spring.bean.Student">
+        <property name="birth" ref="Data"/>
+    </bean>
+
+
+
+</beans>

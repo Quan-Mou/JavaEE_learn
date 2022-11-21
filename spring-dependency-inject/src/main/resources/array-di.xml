@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="PersonBean1" class="pers.quan.spring.bean.Person">
+        <property name="name" value="卫庄"/>
+    </bean>
+    <bean id="PersonBean2" class="pers.quan.spring.bean.Person">
+        <property name="name" value="盖聂"/>
+    </bean>
+
+
+    <bean id="QingDaYeBean" class="pers.quan.spring.bean.QingDaYe">
+<!--        数组里面是简单数据类型-->
+        <property name="names" >
+            <array>
+                <value>胡八一</value>
+                <value>王凯旋</value>
+                <value>张起灵</value>
+            </array>
+        </property>
+<!--        数组里面是复杂类型-->
+        <property name="persons" >
+            <array>
+                <ref bean="PersonBean1"/>
+                <ref bean="PersonBean2"/>
+            </array>
+        </property>
+<!--        注入List-->
+        <property name="friend">
+            <list>
+                <value>洪</value>
+                <value>雷神</value>
+            </list>
+        </property>
+        <!--注入 Set -->
+        <property name="fruits">
+            <set>
+                <value>西瓜</value>
+                <value>菠萝</value>
+            </set>
+        </property>
+<!--        注入Map-->
+        <property name="mapNum" >
+            <map>
+                <entry key="1" value="北京"></entry>
+                <entry key="2" value="上海"></entry>
+            </map>
+        </property>
+<!--        注入空字符-->
+<!--        <property name="emptyStr" value=""/> -->
+        <property name="emptyStr">
+            <value/>
+        </property>
+<!--        注入null-->
+        <property name="emptyNull">
+            <null></null>
+        </property>
+<!--        注入特殊字符：两种方式：1.使用实体字符 2.使用<![CDATA[2 < 3]]> 这种只能使用value-->
+<!--        <property name="specialChar" value="2 &gt; 3"/>-->
+        <property name="specialChar">
+            <value><![CDATA[2 <= 3]]></value>
+        </property>
+
+    </bean>
+
+
+
+</beans>
