@@ -2,13 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/dynamic-proxy-jdk/dynamic-proxy-jdk.iml" filepath="$PROJECT_DIR$/dynamic-proxy-jdk/dynamic-proxy-jdk.iml" />
       <module fileurl="file://$PROJECT_DIR$/factory-method/factory-method.iml" filepath="$PROJECT_DIR$/factory-method/factory-method.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-AspectJ-aop-annotation/spring-AspectJ-aop-annotation.iml" filepath="$PROJECT_DIR$/spring-AspectJ-aop-annotation/spring-AspectJ-aop-annotation.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-JdbcTemplate/spring-JdbcTemplate.iml" filepath="$PROJECT_DIR$/spring-JdbcTemplate/spring-JdbcTemplate.iml" />
+      <module fileurl="file://$PROJECT_DIR$/spring-annotation-ioc/spring-annotation-ioc.iml" filepath="$PROJECT_DIR$/spring-annotation-ioc/spring-annotation-ioc.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-bean-life/spring-bean-life.iml" filepath="$PROJECT_DIR$/spring-bean-life/spring-bean-life.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-begin/spring-begin.iml" filepath="$PROJECT_DIR$/spring-begin/spring-begin.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-create-bean-way/spring-create-bean-way.iml" filepath="$PROJECT_DIR$/spring-create-bean-way/spring-create-bean-way.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-dependency-inject/spring-dependency-inject.iml" filepath="$PROJECT_DIR$/spring-dependency-inject/spring-dependency-inject.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-myspring/spring-myspring.iml" filepath="$PROJECT_DIR$/spring-myspring/spring-myspring.iml" />
       <module fileurl="file://$PROJECT_DIR$/spring-review-reflect/spring-review-reflect.iml" filepath="$PROJECT_DIR$/spring-review-reflect/spring-review-reflect.iml" />
+      <module fileurl="file://$PROJECT_DIR$/static-proxy/static-proxy.iml" filepath="$PROJECT_DIR$/static-proxy/static-proxy.iml" />
     </modules>
   </component>
 </project>

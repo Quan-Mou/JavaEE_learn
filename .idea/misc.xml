@@ -10,6 +10,11 @@
         <option value="$PROJECT_DIR$/spring-bean-life/pom.xml" />
         <option value="$PROJECT_DIR$/spring-review-reflect/pom.xml" />
         <option value="$PROJECT_DIR$/spring-myspring/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-annotation-ioc/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-JdbcTemplate/pom.xml" />
+        <option value="$PROJECT_DIR$/static-proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/dynamic-proxy-jdk/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-AspectJ-aop-annotation/pom.xml" />
       </list>
     </option>
   </component>
