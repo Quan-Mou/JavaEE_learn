@@ -15,6 +15,7 @@
         <option value="$PROJECT_DIR$/static-proxy/pom.xml" />
         <option value="$PROJECT_DIR$/dynamic-proxy-jdk/pom.xml" />
         <option value="$PROJECT_DIR$/spring-AspectJ-aop-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-tx-bank/pom.xml" />
       </list>
     </option>
   </component>

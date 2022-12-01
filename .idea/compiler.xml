@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="factory-method" />
-        <module name="spring-create-bean-way" />
         <module name="spring-review-reflect" />
         <module name="spring-dependency-inject" />
         <module name="spring-AspectJ-aop-annotation" />
-        <module name="spring-annotation-ioc" />
         <module name="spring-bean-life" />
         <module name="dynamic-proxy-jdk" />
         <module name="spring-begin" />
-        <module name="static-proxy" />
         <module name="spring-myspring" />
         <module name="spring-JdbcTemplate" />
+        <module name="spring-tx-bank" />
+        <module name="factory-method" />
+        <module name="spring-create-bean-way" />
+        <module name="spring-annotation-ioc" />
+        <module name="static-proxy" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -32,6 +33,7 @@
       <module name="spring-JdbcTemplate" target="17" />
       <module name="spring-myspring" target="1.8" />
       <module name="spring-review-reflect" target="17" />
+      <module name="spring-tx-bank" target="8" />
       <module name="static-proxy" target="8" />
     </bytecodeTargetLevel>
   </component>
